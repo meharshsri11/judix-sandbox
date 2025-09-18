@@ -11,8 +11,9 @@ const faqs = [
   },
   {
     question: 'Is there a free trial available?',
+     // This line is now fixed
     answer:
-      "Yes, we offer a 14-day free trial on our Pro plan. No credit card is required to get started. You can explore all the features and see if it's the right fit for your firm.",
+      "Yes, we offer a 14-day free trial on our Pro plan. No credit card is required to get started. You can explore all the features and see if it&apos;s the right fit for your firm.",
   },
   {
     question: 'How is my data secured?',
@@ -28,8 +29,9 @@ export default function Faq() {
         <h2 className="font-sora text-4xl font-bold tracking-tight sm:text-5xl">
           Frequently Asked Questions
         </h2>
-        <p className="mt-4 font-outfit text-lg text-gray-400">
-          Have questions? We have answers. If you can't find what you're looking
+        {/* This line is now fixed */}
+        <p className="mt-4 font-outfit text-lg text-muted-foreground">
+          Have questions? We have answers. If you can&apos;t find what you&apos;re looking
           for, feel free to contact us.
         </p>
       </div>
@@ -37,14 +39,14 @@ export default function Faq() {
         {faqs.map((faq, index) => (
           <details
             key={index}
-            className="group rounded-lg border border-gray-700 bg-gray-900/50 p-6 [&_summary::-webkit-details-marker]:hidden"
+            className="group rounded-lg border border-border bg-slate-900/50 p-6 [&_summary::-webkit-details-marker]:hidden"
           >
             <summary className="flex cursor-pointer items-center justify-between">
-              <h3 className="font-sora text-lg font-medium text-white">
+              <h3 className="font-sora text-lg font-medium text-foreground">
                 {faq.question}
               </h3>
               <svg
-                className="h-6 w-6 transform text-gray-400 transition-transform duration-300 group-open:rotate-180"
+                className="h-6 w-6 transform text-muted-foreground transition-transform duration-300 group-open:rotate-180"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -58,7 +60,7 @@ export default function Faq() {
                 />
               </svg>
             </summary>
-            <p className="mt-4 font-outfit leading-relaxed text-gray-300">
+            <p className="mt-4 font-outfit leading-relaxed text-muted-foreground">
               {faq.answer}
             </p>
           </details>
