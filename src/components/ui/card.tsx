@@ -1,4 +1,5 @@
-import { cn } from "@/utils/cn_tw_merger";
+import { cn } from "@/lib/utils";
+
 import React, { ReactNode } from "react";
 
 export const CardTitleComponent = ({ children }: { children: ReactNode }) => {

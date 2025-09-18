@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState, useEffect, useRef } from "react"; // Added useState, useEffect, useRef
 import { cva, type VariantProps } from "class-variance-authority";
-import { cn } from "@/utils/cn_tw_merger";
+import { cn } from "@/lib/utils";
 import { Dropdown, DropdownItem } from "./dropdown/Dropdown"; // Import Dropdown again
 // import Button from "./button"; // Button not used directly
 import InputField from "./inputField";

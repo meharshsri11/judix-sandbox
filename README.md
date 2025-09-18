@@ -140,7 +140,7 @@ Note:
 [src/utils/cn_tw_merger.ts](cci:7://file:///e:/JudiX/v02/frontend/sandbox/src/utils/cn_tw_merger.ts:0:0-0:0) provides a [cn(...classes)](cci:1://file:///e:/JudiX/v02/frontend/sandbox/src/utils/cn_tw_merger.ts:24:0-26:1) helper that merges Tailwind classes and recognizes our custom text-size tokens:
 
 ```ts
-import { cn } from "@/utils/cn_tw_merger";
+import { cn } from "@/lib/utils";
 
 <div className={cn("p-4", "text-body-md", condition && "opacity-50")} />
 ```

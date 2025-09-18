@@ -1,6 +1,6 @@
 import React from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
-import { cn } from '@/utils/cn_tw_merger';
+import { cn } from '@/lib/utils';
 import { Icon } from 'judix-icon';
 
 // Define CVA variants for the notification tile root element
