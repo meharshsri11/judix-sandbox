@@ -1,4 +1,4 @@
-import { cn } from "@/utils/cn_tw_merger";
+import { cn } from "@/lib/utils";
 import { ReactNode, useState, useRef, useEffect, ComponentPropsWithoutRef, ReactPortal } from "react";
 import { createPortal } from "react-dom";
 

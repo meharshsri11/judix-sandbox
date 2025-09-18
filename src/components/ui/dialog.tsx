@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useEffect, useRef, useState, useCallback } from 'react'; // Import useCallback
-import { cn } from '@/utils/cn_tw_merger';
+import { cn } from '@/lib/utils';
 
 type DialogState = Record<string, boolean>;
 type DialogContextType = {

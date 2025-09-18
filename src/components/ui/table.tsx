@@ -1,4 +1,4 @@
-import { cn } from "@/utils/cn_tw_merger";
+import { cn } from "@/lib/utils";
 import { ClassValue } from "class-variance-authority/types";
 import { Icon } from "judix-icon";
 import React, { ReactNode } from "react";

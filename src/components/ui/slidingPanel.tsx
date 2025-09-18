@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, createContext, useContext, useCallback } from 'react'; // Import useCallback
-import { cn } from '@/utils/cn_tw_merger';
+import { cn } from '@/lib/utils';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Icon } from 'judix-icon';
 
